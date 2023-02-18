@@ -1,2 +1,2 @@
 # arduino-misc
-scetches for arduino
+sketches for arduino
