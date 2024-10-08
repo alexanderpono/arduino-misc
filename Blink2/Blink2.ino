@@ -21,7 +21,7 @@ void turnOff(int led) {
 }
 
 void doBlink2() {
-  const int MAX_LIGHT = 150;
+  const int MAX_LIGHT = 120;
 
   turnOn(LED_BUILTIN);
   for (int i=0; i<=MAX_LIGHT; i++) {
@@ -34,8 +34,10 @@ void doBlink2() {
     analogWrite(LED, i); 
     delay(10);
   }
+  
+  delay(600);
 }
 
 void loop() {
-  doBlink2();
+  doBlink1(LED_BUILTIN);
 }
